@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: wengxs-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+security:
+  oauth2:
+    client:
+      access-token-uri: /auth/oauth/token
+      user-authorization-uri: /auth/oauth/authorize
+    resource:
+      user-info-uri: /auth/user
+      prefer-token-info: false
+
+zuul:
+  sensitive-headers:
+  routes:
+    auth:
+      path: /auth/**
+      serviceId: wengxs-auth
+    upms:
+      path: /upms/**
+      serviceId: wengxs-upms

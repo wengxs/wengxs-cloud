@@ -1,0 +1,33 @@
+#注册中心集群配置，打包jar，设置启动参数spring.profiles=serverX
+#server:
+#  port: 8761
+#
+#spring:
+#  application:
+#    name: wengxs-eureka
+#  profiles: server1
+#
+#eureka:
+#  instance:
+#    hostname: server1
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://server1:8762/eureka/
+#
+#---
+#server:
+#  port: 8762
+#
+#spring:
+#  application:
+#    name: wengxs-eureka
+#  profiles: server2
+#
+#eureka:
+#  instance:
+#    hostname: server2
+#  client:
+#    service-url:
+#      defaultZone: http://server2:8761/eureka/
