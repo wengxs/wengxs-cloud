@@ -15,6 +15,10 @@
 
     <modules>
         <module>wengxs-upms</module>
+        <module>wengxs-goods</module>
+        <module>wengxs-inventory</module>
+        <module>wengxs-member</module>
+        <module>wengxs-order</module>
     </modules>
 
 </project>
