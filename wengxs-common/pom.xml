@@ -14,7 +14,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>wengxs-core</module>
+        <module>wengxs-common-core</module>
+        <module>wengxs-common-log</module>
     </modules>
 
     <dependencies>

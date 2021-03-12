@@ -4,10 +4,10 @@ server:
 spring:
   application:
     name: wengxs-eureka
-  security:
-    user:
-      name: wengxs
-      password: wengxs
+#  security:
+#    user:
+#      name: wengxs
+#      password: wengxs
 
 eureka:
   instance:
@@ -20,8 +20,8 @@ eureka:
   server:
     enable-self-preservation: false
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'

@@ -15,10 +15,12 @@
 
     <modules>
         <module>wengxs-upms</module>
-        <module>wengxs-goods</module>
-        <module>wengxs-inventory</module>
-        <module>wengxs-member</module>
-        <module>wengxs-order</module>
+        <module>wengxs-pms</module>
+        <module>wengxs-mms</module>
+        <module>wengxs-oms</module>
+        <module>wengxs-cms</module>
+        <module>wengxs-mq-producer</module>
+        <module>wengxs-mq-consumer</module>
     </modules>
 
 </project>

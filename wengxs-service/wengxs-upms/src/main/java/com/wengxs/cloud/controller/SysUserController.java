@@ -1,6 +1,6 @@
 package com.wengxs.cloud.controller;
 
-import com.wengxs.cloud.core.util.R;
+import com.wengxs.cloud.core.R;
 import com.wengxs.cloud.dto.UserInfo;
 import com.wengxs.cloud.service.SysUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -27,13 +27,13 @@ public class SysUserController {
     public R findByUsername(@RequestParam String username) {
         log.info("查找用户");
         UserInfo userInfo = sysUserService.findUserInfo(username);
-        return R.success(userInfo);
+        return R.ok(userInfo);
     }
 
     @GetMapping("/hi")
     @PreAuthorize("hasAuthority('admin:user:query')")
     public R hello() {
-        return R.success("你好啊");
+        return R.ok("你好啊");
     }
 
 }

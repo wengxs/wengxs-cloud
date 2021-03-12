@@ -1,6 +1,6 @@
 package com.wengxs.cloud.service.impl;
 
-import com.wengxs.cloud.core.util.R;
+import com.wengxs.cloud.core.R;
 import com.wengxs.cloud.dto.UserInfo;
 import com.wengxs.cloud.feign.SysUserFeign;
 import com.wengxs.cloud.model.SysUser;

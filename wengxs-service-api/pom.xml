@@ -14,11 +14,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>wengxs-upms-api</module>
-        <module>wengxs-member-api</module>
-        <module>wengxs-goods-api</module>
-        <module>wengxs-inventory-api</module>
-        <module>wengxs-order-api</module>
+        <module>wengxs-api-upms</module>
+        <module>wengxs-api-mms</module>
+        <module>wengxs-api-pms</module>
+        <module>wengxs-api-oms</module>
+        <module>wengxs-api-cms</module>
     </modules>
 
 
