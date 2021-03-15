@@ -19,6 +19,7 @@
         <module>wengxs-api-pms</module>
         <module>wengxs-api-oms</module>
         <module>wengxs-api-cms</module>
+        <module>wengxs-api-provider</module>
     </modules>
 
 

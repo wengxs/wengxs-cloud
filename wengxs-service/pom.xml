@@ -21,6 +21,8 @@
         <module>wengxs-cms</module>
         <module>wengxs-mq-producer</module>
         <module>wengxs-mq-consumer</module>
+        <module>wengxs-provider</module>
+        <module>wengxs-consumer</module>
     </modules>
 
 </project>

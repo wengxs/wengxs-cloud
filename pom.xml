@@ -17,17 +17,18 @@
         <module>wengxs-common</module>
         <module>wengxs-auth</module>
         <module>wengxs-config</module>
+        <module>wengxs-gateway</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.12.RELEASE</version>
+        <version>2.3.2.RELEASE</version>
         <relativePath/>
     </parent>
 
     <properties>
-        <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+        <spring-cloud.version>Hoxton.SR10</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -51,6 +52,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

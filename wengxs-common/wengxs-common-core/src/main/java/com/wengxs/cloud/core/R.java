@@ -21,7 +21,7 @@ public class R<T> implements Serializable {
 
     public static final int SUCCESS = 200;
 
-    public static final int FAIL = 1;
+    public static final int FAIL = 500;
 
     private int code = SUCCESS;
 
