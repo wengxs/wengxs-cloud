@@ -1,0 +1,11 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: wengxs-provider
+#  profiles:
+#    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

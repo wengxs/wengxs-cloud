@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: wengxs-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        # 将配置文件放到本地
+        native:
+          search-locations: classpath:/configs/
+#          #将配置信息放到GitHub仓库
+#        git:
+#          #配置文件所在的服务地址
+#          uri: https://github.com/wengxs/wengxs-cloud
+#          #配置文件所在的文件路径
+#          search-paths: configs
+#          #公开的项目不需要设置用户名和密码
+#          username:
+#          password:
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

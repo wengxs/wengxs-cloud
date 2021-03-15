@@ -16,6 +16,7 @@
     <modules>
         <module>wengxs-common-core</module>
         <module>wengxs-common-log</module>
+        <module>wengxs-common-web</module>
     </modules>
 
     <dependencies>
