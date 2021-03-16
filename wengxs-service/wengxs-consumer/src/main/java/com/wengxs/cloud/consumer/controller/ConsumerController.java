@@ -1,5 +1,6 @@
 package com.wengxs.cloud.consumer.controller;
 
+import com.wengxs.cloud.consumer.service.ConsumerIntegralService;
 import com.wengxs.cloud.core.R;
 import com.wengxs.cloud.provider.entity.ProviderOrder;
 import com.wengxs.cloud.provider.feign.ProviderOrderClient;
@@ -18,13 +19,23 @@ public class ConsumerController {
 
     @Autowired
     private ProviderOrderClient providerOrderClient;
+    @Autowired
+    private ConsumerIntegralService consumerIntegralService;
 
     @GetMapping("/get")
-    public R<?> create() {
+    public R<?> get() {
         ProviderOrder providerOrder = new ProviderOrder();
         providerOrder.setOrderNo(System.currentTimeMillis() + "");
         providerOrder.setQty(1);
         return providerOrderClient.create(providerOrder);
+    }
+
+    @GetMapping("/create")
+    public R<?> create() {
+        ProviderOrder providerOrder = new ProviderOrder();
+        providerOrder.setOrderNo(System.currentTimeMillis() + "");
+        providerOrder.setQty(1);
+        return R.ok(consumerIntegralService.createOrder(providerOrder));
     }
 
 }

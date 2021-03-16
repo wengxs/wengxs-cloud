@@ -1,5 +1,6 @@
 package com.wengxs.cloud.core;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,7 +30,7 @@ public class R<T> implements Serializable {
 
     private T data;
 
-    public static R ok() {
+    public static R<?> ok() {
         return ok(null);
     }
 
@@ -39,15 +40,20 @@ public class R<T> implements Serializable {
         return r;
     }
 
-    public static R fail(String message) {
-        R r = new R();
+    public static <T> R<T> fail(String message) {
+        R<T> r = new R<>();
         r.setCode(FAIL);
         r.setMessage(message);
         return r;
     }
 
-    public static R fail(Throwable e) {
+    public static <T> R<T> fail(Throwable e) {
         return fail(e.getMessage());
+    }
+
+    @JsonIgnore
+    public boolean isOk() {
+        return this.code == SUCCESS;
     }
 
 }

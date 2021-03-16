@@ -14,7 +14,4 @@ import org.springframework.stereotype.Service;
 public class ProviderOrderServiceImpl extends ServiceImpl<ProviderOrderMapper, ProviderOrder>
         implements ProviderOrderService {
 
-    public void s() {
-        this.baseMapper.
-    }
 }

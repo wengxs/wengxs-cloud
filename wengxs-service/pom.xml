@@ -19,8 +19,6 @@
         <module>wengxs-mms</module>
         <module>wengxs-oms</module>
         <module>wengxs-cms</module>
-        <module>wengxs-mq-producer</module>
-        <module>wengxs-mq-consumer</module>
         <module>wengxs-provider</module>
         <module>wengxs-consumer</module>
     </modules>
@@ -34,6 +32,18 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 

@@ -20,6 +20,7 @@
         <module>wengxs-api-oms</module>
         <module>wengxs-api-cms</module>
         <module>wengxs-api-provider</module>
+        <module>wengxs-api-consumer</module>
     </modules>
 
     <dependencies>
