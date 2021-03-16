@@ -12,6 +12,11 @@
     <artifactId>wengxs-provider</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.wengxs.cloud</groupId>
+            <artifactId>wengxs-api-provider</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

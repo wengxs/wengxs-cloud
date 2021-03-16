@@ -11,5 +11,8 @@
 
     <artifactId>wengxs-api-provider</artifactId>
 
+    <dependencies>
+    </dependencies>
+
 
 </project>
