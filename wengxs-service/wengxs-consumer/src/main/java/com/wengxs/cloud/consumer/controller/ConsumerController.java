@@ -1,7 +1,8 @@
 package com.wengxs.cloud.consumer.controller;
 
 import com.wengxs.cloud.core.R;
-import com.wengxs.cloud.provider.feign.ProviderFeign;
+import com.wengxs.cloud.provider.entity.ProviderOrder;
+import com.wengxs.cloud.provider.feign.ProviderOrderClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,15 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/consumer")
 public class ConsumerController {
 
-//    @Autowired
-//    private RestTemplate restTemplate;
     @Autowired
-    private ProviderFeign providerFeign;
+    private ProviderOrderClient providerOrderClient;
 
     @GetMapping("/get")
     public R<?> create() {
-//        return restTemplate.postForObject("http://localhost:8011/provider/create", null, R.class);
-        return providerFeign.create();
+        ProviderOrder providerOrder = new ProviderOrder();
+        providerOrder.setOrderNo(System.currentTimeMillis() + "");
+        providerOrder.setQty(1);
+        return providerOrderClient.create(providerOrder);
     }
 
 }

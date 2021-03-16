@@ -9,18 +9,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * 2021/3/15 下午5:24
  */
 @SpringCloudApplication
-//@SpringBootApplication
-//@EnableDiscoveryClient
 @EnableFeignClients
 public class ConsumerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ConsumerApplication.class, args);
     }
-
-//    @Bean
-//    public RestTemplate getRestTemplate() {
-//        return new RestTemplate();
-//    }
 
 }
